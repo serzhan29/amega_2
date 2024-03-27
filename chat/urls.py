@@ -1,7 +1,3 @@
-from django.urls import path
-from .views import chat_room, send_message
-
-urlpatterns = [
-    path('chat/<int:sender_id>/<int:receiver_id>/', chat_room, name='chat_room'),
-    path('send_message/', send_message, name='send_message'),
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:4dec9bae24ae8e5fd667febd45f957fe5e36dd75cb388cfdbc2186ce0c6a54f4
+size 242

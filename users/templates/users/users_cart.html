@@ -1,22 +1,3 @@
-{% extends "base.html" %}
-{% load static %}
-{% load carts_tags %}
-
-
-{% block content %}
-{% user_carts request as carts %}
-<div class="row">
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                <h3 class="text-center mb-4">Корзина</h3>
-                <div class="container" id="cart-items-container">
-                    <!-- Разметка корзины -->
-                    {% include "carts/includes/included_cart.html" %}
-                    <!-- Закончилась разметка корзины -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{% endblock  %}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ab19ecfdc1f735c45275c5143828472cf94d25493d75a804d4c6a973fed0958
+size 751

@@ -1,14 +1,3 @@
-from rest_framework import serializers
-from goods.models import Categories, Products
-
-
-class CategoriesSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Categories
-        fields = '__all__'
-
-
-class ProductsSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Products
-        fields = '__all__'
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0dfdb10010e6ab079980c866d807c929d15e852a9dfd7694fb49211861cee27
+size 351

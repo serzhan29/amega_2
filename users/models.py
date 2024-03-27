@@ -1,15 +1,3 @@
-from django.db import models
-from django.contrib.auth.models import AbstractUser
-
-
-class User(AbstractUser):
-    image = models.ImageField(upload_to='users_images', blank=True, null=True, verbose_name='Аватар')
-    phone_number = models.CharField(max_length=10, blank=True, null=True)
-
-    class Meta:
-        db_table = 'user'
-        verbose_name = 'Пользователя'
-        verbose_name_plural = 'Пользователи'
-
-    def __str__(self):
-        return self.username
+version https://git-lfs.github.com/spec/v1
+oid sha256:87354fc5cec457a517392ec158707692fda1b8bd88a662fca54f3e02f3a89e26
+size 509

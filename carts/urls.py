@@ -1,16 +1,3 @@
-from django.urls import path, include
-from rest_framework import routers
-
-from carts import views
-
-app_name = 'carts'
-router = routers.DefaultRouter()
-router.register(r'carts', views.MobileCartsApi)
-
-
-urlpatterns = [
-    path('cart_add/', views.cart_add, name='cart_add'),
-    path('cart_change/', views.cart_change, name='cart_change'),
-    path('cart_remove/', views.cart_remove, name='cart_remove'),
-    path('api/', include(router.urls)),
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:01287a2d85f6254551bea4819ce5abd50ae81649ffb06bb2d9214214d0e80dfc
+size 459

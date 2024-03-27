@@ -1,16 +1,3 @@
-from django.contrib import admin
-from carts.admin import CartTabAdmin
-from orders.admin import OrderTabulareAdmin
-
-from users.models import User
-
-# admin.site.register(User)
-
-@admin.register(User)
-class UserAdmin(admin.ModelAdmin):
-    list_display = ["username", "first_name", "last_name", "email",]
-    search_fields = ["username", "first_name", "last_name", "email",]
-
-    
-
-    inlines = [CartTabAdmin, OrderTabulareAdmin]
+version https://git-lfs.github.com/spec/v1
+oid sha256:efeebe4b792aea5d6da423605542c9ec2bf1e5fb5667b63479c17d3df33d1cd4
+size 441
